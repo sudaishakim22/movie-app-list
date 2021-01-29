@@ -28,8 +28,5 @@ export async function request(method, endpoint, body = null) {
     .catch((err) => {
       console.log(err);
     });
-
-  console.log("data dari util" + resData);
-
   return resData;
 }

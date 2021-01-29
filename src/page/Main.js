@@ -18,7 +18,6 @@ class Main extends Component {
 
   async getDataById(id) {
     await this.props.fetchMoviesId(id);
-    console.log(this.props);
     if (this.props.data) {
       this.setState({
         detailDataMovie: this.props.data,
@@ -92,7 +91,6 @@ class Main extends Component {
                       listMovies: this.props.data.titles,
                     });
                   }
-                  console.log(this.state.listMovies);
                 }}
               >
                 <div className="p-1 flex flex-col items-center">

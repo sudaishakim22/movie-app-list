@@ -16,6 +16,5 @@ async function getMovieId(id) {
   let body = id;
 
   const response = await request("GET", "film", body);
-  console.log("dari service" + response);
   return response;
 }

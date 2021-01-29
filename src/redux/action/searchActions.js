@@ -1,5 +1,4 @@
 import { SEARCH_MOVIE, FETCH_MOVIE, FETCH_MOVIE_BY_ID } from "./types";
-import axios from "axios";
 import { moviesService } from "../services/index";
 
 export const searchMovie = (text) => (dispatch) => {
